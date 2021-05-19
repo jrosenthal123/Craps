@@ -7,7 +7,7 @@ print("Bank Balance:", bank)
 
 while again == 1:
     bet = int(input("Enter your bet: "))
-    while bet > bank:
+    while bet > bank or bet <= 0:
         print("Your bet must be equal to or less than your bank")
         bet = int(input("Enter your bet: "))
 
